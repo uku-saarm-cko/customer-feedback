@@ -37,6 +37,7 @@
     margin-right: $gridUnit-small;
     border: solid 1px $color-brand01;
     border-radius: $border-radius;
+    overflow: hidden;
     @media (max-width: $breakpoint-not-desktop) {
       width: 180px;
     }
@@ -45,6 +46,7 @@
       background-color: $color-brand01;
       height: $gridUnit;
       border-radius: $border-radius;
+      margin-left: -1px;
     }
   }
 }
