@@ -1,0 +1,84 @@
+@import "src/variables";
+
+.form-element {
+  display: flex;
+  position: relative;
+  min-width: 400px;
+  width: 100%;
+  justify-content: left;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  margin-bottom: $gridUnit-large;
+  @media (max-width: $breakpoint-not-desktop) {
+    min-width: 280px;
+  }
+
+  &.has-error {
+    Input, Textarea {
+      border-color: $color-error;
+
+      &:focus {
+        border-color: $color-error;
+      }
+    }
+
+    Label {
+      color: $color-brand01;
+    }
+
+    Input:focus + Label, Textarea:focus + Label {
+      color: $color-error;
+    }
+
+    P {
+      position: absolute;
+      bottom: -$gridUnit-large;
+      left: 0;
+      font-size: $font-size-smaller;
+      color: $color-error;
+    }
+  }
+
+  &.has-value {
+    Label {
+      top: 11px;
+      font-size: $font-size-smaller;
+    }
+  }
+
+  Label {
+    position: absolute;
+    left: 16px;
+    top: $gridUnit;
+    text-align: left;
+    margin-bottom: $gridUnit-small * 0.5;
+    font-size: $font-size-small;
+    color: $color-gray-darker;
+    transition: all 0.3s;
+  }
+
+  Input, TextArea {
+    width: 100%;
+    height: 56px;
+    line-height: 16px;
+    font-size: $font-size-small;
+    border: $border-default;
+    color: $color-gray-darker;
+    border-radius: 8px;
+    padding: 29px 16px 10px;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none;
+      padding: 29px 16px 10px;
+      border-color: $color-brand02;
+    }
+  }
+
+  input:focus + label, textarea:focus + label {
+    color: $color-brand02;
+    top: 11px;
+    font-size: $font-size-smaller;
+    transition: all 0.3s;
+  }
+}

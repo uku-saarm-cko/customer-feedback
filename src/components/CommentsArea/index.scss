@@ -1,0 +1,12 @@
+@import "src/variables";
+
+.comments-area {
+  h2 {
+    margin: $gridUnit-large * 2 0 $gridUnit 0;
+  }
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+  }
+}

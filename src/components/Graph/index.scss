@@ -1,0 +1,50 @@
+@import "src/variables";
+
+.graph-area {
+  &-container {
+    width: 340px;
+    height: auto;
+    margin-bottom: $gridUnit * 2;
+    padding: 0 $gridUnit $gridUnit $gridUnit;
+    @media (max-width: $breakpoint-not-desktop) {
+      width: 300px;
+      padding: 0;
+    }
+
+    P {
+      font-weight: 500;
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+
+  .rating-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: $gridUnit;
+
+    .label {
+      width: 50px;
+      margin-right: $gridUnit-small * 0.5;
+    }
+  }
+
+  .rating-bar {
+    height: $gridUnit;
+    width: 200px;
+    background-color: $color-comment;
+    margin-right: $gridUnit-small;
+    border: solid 1px $color-brand01;
+    border-radius: $border-radius;
+    @media (max-width: $breakpoint-not-desktop) {
+      width: 180px;
+    }
+
+    &-fill {
+      background-color: $color-brand01;
+      height: $gridUnit;
+      border-radius: $border-radius;
+    }
+  }
+}

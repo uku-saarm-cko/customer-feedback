@@ -1,0 +1,54 @@
+@import "src/variables";
+
+.comment-item {
+  box-shadow: $color-gray-light 1px 1px 10px;
+  width: 400px;
+  border-radius: $border-radius;
+  padding: $gridUnit;
+  margin-bottom: $gridUnit * 2;
+  margin-right: $gridUnit * 2;
+  background-color: $color-comment;
+  @media (max-width: $breakpoint-not-desktop) {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &-name {
+    text-align: left;
+    font-size: $font-size-medium;
+    font-weight: 500;
+  }
+
+  &-email {
+    text-align: left;
+    margin-bottom: 2px;
+    font-size: $font-size-small;
+  }
+
+  &-date {
+    text-align: left;
+    font-size: $font-size-small;
+  }
+
+  &-rating {
+    text-align: left;
+    margin-bottom: $gridUnit;
+
+    .rating-number {
+      margin: $gridUnit 0 $gridUnit-small * 0.5 0;
+      font-weight: 800;
+    }
+  }
+
+  &-comment {
+    text-align: left;
+    margin-bottom: $gridUnit;
+    line-height: 26px;
+    font-size: $font-size-medium-larger;
+    font-weight: 500
+  }
+}

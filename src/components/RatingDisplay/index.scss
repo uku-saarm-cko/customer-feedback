@@ -1,0 +1,32 @@
+@import "src/variables";
+
+.rating-display-container {
+  min-width: 130px;
+  margin-bottom: 0;
+
+  Fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  Input {
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+
+  Label {
+    display: block;
+    content: ' ';
+    background-size: $gridUnit $gridUnit;
+    margin-right: $gridUnit-small * 0.5;
+
+    Svg {
+      height: $gridUnit;
+      width: $gridUnit;
+      fill: $color-brand01;
+    }
+  }
+}

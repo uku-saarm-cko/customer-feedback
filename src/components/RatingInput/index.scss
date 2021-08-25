@@ -1,0 +1,41 @@
+@import "src/App.scss";
+
+.rating-input-container {
+  min-width: 140px;
+  margin-bottom: $gridUnit * 2;
+
+  P {
+    text-align: left;
+    margin-bottom: -$gridUnit-small * 0.5;
+    color: $color-gray-darker;
+  }
+
+  Fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  Input {
+    width: 0;
+    height: 0;
+    margin-right: 0;
+  }
+
+  Label {
+    display: block;
+    content: ' ';
+    background-size: 36px 36px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    Svg {
+      height: 36px;
+      width: 36px;
+      fill: $color-brand01;
+    }
+  }
+}
