@@ -42,7 +42,7 @@ Besides classNames and SCSS, no other libraries were added and all the component
 
 Since this is single page application, the architecture of this code is quite simplistic. The main structure of this application can be found in App.tsx, that calls in components form components folder.
 
-Custom components created fo this task were:
+Custom components created for this task were:
 * CommentItem
 * CommentsArea
 * CommentsFeatured
